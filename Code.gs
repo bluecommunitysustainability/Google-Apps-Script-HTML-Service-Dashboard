@@ -19,7 +19,7 @@ function getSpreadsheetData() {
   // This does not work, see https://code.google.com/p/google-apps-script-issues/issues/detail?id=5233
 //  var ss = SpreadsheetApp.getActiveSpreadsheet();
 //  var data = ss.getSheets()[0].getDataRange().getValues();
-  var sheetId = 'sheet-ID';  // Replace with spreadsheet ID
+  var sheetId = '1evBVw-zWb9rRMzrVX7d-ZP_tnpI55q_NW0Xt33BRNUg';  // Replace with spreadsheet ID
   var data = SpreadsheetApp.openById(sheetId).getSheets()[0].getDataRange().getValues();
   return (data.length > 1) ? data : null;
 }
